@@ -46,7 +46,7 @@ Measurements are in X_train.txt and X_test.txt
 Subject ID are in subject_train.txt and subject_test.txt
 Activity ID are in Y_train.txt and Y_test.txt
 Activity ID and their correspondent labels are in the file activity_labels.txt.
-Names and index of measurements are in file features.txt
+Names and index of measurements are in file features.txt.
 
 Merge the training sets and the test sets.
 
@@ -61,7 +61,7 @@ Save the first data set with the name "first_tidy_data_set.txt"
 
 Create a second tidy data set with average of each variable for each activity and each subject:
 
-Melt the dataset using as ID "Activity_ID", "Activity_Name", "Subject_ID"
+Melt the dataset using as ID "Activity_ID", "Activity_Name", "Subject_ID".
 Cast the dataset with Activity_Name and Subject_ID as IDs and mean as the function.
 Save the second data set with the name "second_tidy_data_set.txt"
 
