@@ -1,7 +1,7 @@
 This code book describes the variables, the data, and any transformations or work that you performed to clean up the data.
 
-DATA
-====
+Data source
+===========
 The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone.
 A full description is available at the site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -39,8 +39,8 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
 
-The R script called run_analysis.R does the following: 
-=====================================================
+The R script run_analysis.R does the following: 
+================================================
 Read the datasets:
 Measurements are in X_train.txt and X_test.txt
 Subject ID are in subject_train.txt and subject_test.txt
@@ -59,7 +59,7 @@ Add additional column with descriptive activity names from activity_labels.txt.
 Save the first data set with the name "first_tidy_data_set.txt"
 
 
-Create a second tidy data set with average of each variable for each activity and each subject.
+Create a second tidy data set with average of each variable for each activity and each subject:
 
 Melt the dataset using as ID "Activity_ID", "Activity_Name", "Subject_ID"
 Cast the dataset with Activity_Name and Subject_ID as IDs and mean as the function.
